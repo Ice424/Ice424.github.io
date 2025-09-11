@@ -37,7 +37,7 @@ function update() {
 }
 
 function draw() {
-  ctx.fillStyle = "123456";
+  ctx.strokeStyle = "black";
   ctx.clearRect(0, 0, WIDTH, HEIGHT);
   ctx.fillRect(0,0,WIDTH,HEIGHT);
   ctx.strokeStyle = "white";
@@ -61,7 +61,6 @@ function draw() {
   }
 
   // Draw points as small white dots
-  ctx.fillStyle = "white";
   for (let [x, y] of points) {
     ctx.beginPath();
     ctx.arc(x, y, 2, 0, Math.PI * 2);
