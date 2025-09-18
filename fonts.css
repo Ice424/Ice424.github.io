@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Adwaita";
+  src: url(Fonts/AdwaitaMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Adwaita";
+  src: url(Fonts/AdwaitaMono-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Adwaita";
+  src: url(Fonts/AdwaitaMono-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Adwaita";
+  src: url(Fonts/AdwaitaMono-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: bold;
+}
+
+
+@font-face {
+  font-family: "Proto";
+  src: url(Fonts/Proto/0xProtoNerdFontMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url(Fonts/Proto/0xProtoNerdFontMono-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url(Fonts/Proto/0xProtoNerdFontMono-Italic.ttf);
+  font-style: italic;
+}

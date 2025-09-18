@@ -1,8 +1,8 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-const NUM_POINTS = 80;
-const BORDER = 20
+const NUM_POINTS = 100;
+const BORDER = 40
 
 var width = 0
 var height = 0
@@ -16,8 +16,8 @@ function resize() {
   width = canvas.width;
   height = canvas.height;
   points = Array.from({ length: NUM_POINTS }, () => [
-  Math.random() * width,
-  Math.random() * height,
+  Math.random() * (width+BORDER),
+  Math.random() * (height+BORDER),
 ]);
 }
 resize();
@@ -50,6 +50,7 @@ function update() {
 }
 
 function draw() {
+  ctx.fillStyle = "black"
   ctx.strokeStyle = "black";
   ctx.clearRect(0, 0, width, height);
   ctx.fillRect(0,0,width,height);
@@ -73,10 +74,12 @@ function draw() {
     ctx.stroke();
   }
 
+  ctx.fillStyle = "white"
   // Draw points as small white dots
   for (let [x, y] of points) {
+    
     ctx.beginPath();
-    ctx.arc(x, y, 2, 0, Math.PI * 2);
+    ctx.arc(x, y, 5, 0, Math.PI * 2);
     ctx.fill();
   }
 }

@@ -12,8 +12,10 @@
   <title>Ice424</title>
   <meta name="description" content="">
 
-  <link rel="stylesheet" type="text/css" href="index.css  ">
-
+  <link rel="stylesheet" type="text/css" href="index.css">
+  </link>
+  <link rel="stylesheet" type="text/css" href="fonts.css">
+  </link>
   <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
 </head>
 
@@ -21,16 +23,27 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <div>
-    <div, class="glassIntrobox">
-      <h1>Text</h1>
+  <div class="flex-container-container">
+    <div class="flex-container">
+      <div class="glass introbox" id="termynal" data-termynal>
+        <span data-ty="input" class="h1">Ice424</span>
+        <span data-ty="input" class="h2">Portfolio website</span>
+      </div>
+      <div class="glass otherbox">2</div>
     </div>
+    <div class="flex-container">
+      <div class="glass otherbox">2</div>
+      <div class="glass introbox" id="termynal" data-termynal>
+      </div>
+    </div>
+  </div>
+
   <div>
     <canvas id="canvas"></canvas>
   </div>
 
   <script src="canvas.js"></script>
-
+  <script src="termynal.js" data-termynal-container="#termynal"></script>
 
 </body>
 
