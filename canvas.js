@@ -48,6 +48,16 @@ function update() {
     if (points[i][1] < 0 - BORDER|| points[i][1] > height + BORDER) velocities[i][1] *= -1;
   }
 }
+let x = Math.random() * (width+BORDER)
+let y = Math.random() * (height+BORDER)
+document.addEventListener("mousemove", updateCursorPos);
+
+function updateCursorPos(event) {
+  x = event.pageX;
+  y = event.pageY;
+}
+
+
 
 function draw() {
   ctx.fillStyle = "black"
@@ -57,6 +67,8 @@ function draw() {
   ctx.strokeStyle = "white";
   ctx.lineWidth = 1;
 
+  points[0] = [x, y]
+  
   const delaunay = d3.Delaunay.from(points);
   const triangles = delaunay.triangles;
 

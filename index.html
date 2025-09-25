@@ -23,16 +23,45 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+  <div class="title" id="termynal">
+    <span data-ty="input" class="h1">Ice424</span>
+    <span data-ty="input" class="h2">Portfolio website</span>
+  </div>
+  <div>
+    <canvas id="canvas"></canvas>
+  </div>
+
+  
+
   <div class="flex-container-container">
     <div class="flex-container">
       <div class="glass introbox" id="termynal" data-termynal style="width: auto; min-height: auto;">
         <span data-ty="input" class="h1">Ice424</span>
         <span data-ty="input" class="h2">Portfolio website</span>
       </div>
-      <div class="glass otherbox">2</div>
+      <div class="glass otherbox">
+        <img src="logo.png">
+      </div>
     </div>
     <div class="flex-container">
-      <div class="glass otherbox">2</div>
+      <div class="glass otherbox">
+        <!-- Include the library. -->
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="github.css" />
+
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+        </div>
+
+        <script>
+          GitHubCalendar(".calendar", "Ice424", { responsive: true });
+        </script>
+
+      </div>
       <div class="glass introbox" id="termynal" data-termynal>
       </div>
     </div>

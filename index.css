@@ -9,19 +9,21 @@ body {
   margin: 0;
   font-family: "Proto", sans-serif;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 128px;
   display: table;
-  margin: 10px;
+  margin-left: auto;
+  margin-top: 25%;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 
 .h2 {
   color: rgb(225, 241, 250);
-  margin: 0;
   font-family: "Proto", sans-serif;
   font-weight: bold;
   font-size: 45px;
-  margin: 10px;
+  margin-left: auto;
+  
 }
 
 p {
@@ -53,6 +55,16 @@ p {
   padding: 10px;
 }
 
+.title{
+  z-index: 1;
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  margin-bottom: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 10px;
+}
 
 .flex-container {
   display: flex;
@@ -70,3 +82,5 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 10px;
 }
+
+
