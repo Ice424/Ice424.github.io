@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 
 <head>
@@ -10,70 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ice424</title>
-  <meta name="description" content="">
+  <meta name="description" content="Ice424 Portfolio Website">
 
   <link rel="stylesheet" type="text/css" href="index.css">
-  </link>
   <link rel="stylesheet" type="text/css" href="fonts.css">
-  </link>
+
   <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
 </head>
 
 <body>
-  <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <canvas id="canvas"></canvas>
+
   <div class="title" id="termynal">
-    <span data-ty="input" class="h1">Ice424</span>
-    <span data-ty="input" class="h2">Portfolio website</span>
-  </div>
-  <div>
-    <canvas id="canvas"></canvas>
-  </div>
-
-  
-
-  <div class="flex-container-container">
-    <div class="flex-container">
-      <div class="glass introbox" id="termynal" data-termynal style="width: auto; min-height: auto;">
-        <span data-ty="input" class="h1">Ice424</span>
-        <span data-ty="input" class="h2">Portfolio website</span>
-      </div>
-      <div class="glass otherbox">
-        <img src="logo.png">
-      </div>
-    </div>
-    <div class="flex-container">
-      <div class="glass otherbox">
-        <!-- Include the library. -->
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-
-        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-        <link rel="stylesheet" href="github.css" />
-
-        <!-- Prepare a container for your calendar. -->
-        <div class="calendar">
-          <!-- Loading stuff -->
-          Loading the data just for you.
-        </div>
-
-        <script>
-          GitHubCalendar(".calendar", "Ice424", { responsive: true });
-        </script>
-
-      </div>
-      <div class="glass introbox" id="termynal" data-termynal>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <canvas id="canvas"></canvas>
+    <h1 data-ty="input" class="title-main">Ice424</h1>
+    <h2 data-ty="input" class="title-sub">Portfolio website</h2>
   </div>
 
   <script src="canvas.js"></script>
   <script src="termynal.js" data-termynal-container="#termynal"></script>
-
 </body>
 
 </html>
