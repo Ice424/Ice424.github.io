@@ -8,6 +8,7 @@ var width = 0
 var height = 0
 var points
 
+var grad
 
 // Resize canvas to fill the window
 function resize() {
@@ -18,7 +19,13 @@ function resize() {
   points = Array.from({ length: NUM_POINTS }, () => [
   Math.random() * (width+BORDER),
   Math.random() * (height+BORDER),
+
+  
 ]);
+  grad=ctx.createLinearGradient(0,height-(height*0.3), 0,height);
+  grad.addColorStop(0, "black");
+  grad.addColorStop(1, getComputedStyle(document.body).getPropertyValue('--background'));
+
 }
 resize();
 window.addEventListener("resize", resize);
@@ -67,11 +74,16 @@ function draw() {
   ctx.strokeStyle = "white";
   ctx.lineWidth = 1;
 
+
+  ctx.fillStyle = grad;
+  ctx.fillRect(0,height - (height*0.3), width, height*0.3 );
   points[0] = [x, y]
   
   const delaunay = d3.Delaunay.from(points);
   const triangles = delaunay.triangles;
 
+
+  
   // Draw triangle edges
   for (let i = 0; i < triangles.length; i += 3) {
     let a = points[triangles[i]];
@@ -94,6 +106,8 @@ function draw() {
     ctx.arc(x, y, 5, 0, Math.PI * 2);
     ctx.fill();
   }
+  
+
 }
 
 function loop() {
