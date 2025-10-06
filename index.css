@@ -7,10 +7,6 @@
     --accent: #498de0;
   }
 
-
-
-
-
 html,
 body {
   margin: 0;
@@ -28,6 +24,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 0;
+  overflow: auto;
 }
 
 /* === Title Container === */
@@ -39,6 +36,13 @@ body {
 }
 
 /* === Main Title === */
+h1 {
+  color: var(--accent);
+  margin: 0;
+  font-family: "Proto", sans-serif;
+  font-weight: bold;
+  font-size: 128px;
+}
 .title-main {
   color: var(--accent);
   margin: 0;
@@ -84,4 +88,13 @@ p {
   .title-sub {
     font-size: 28px;
   }
+}
+
+.filler{
+  height: 50%;
+}
+.main {
+  z-index: 1;
+  position: relative;
+  text-align: center;
 }
