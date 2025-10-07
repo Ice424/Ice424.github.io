@@ -7,32 +7,39 @@
     --accent: #498de0;
   }
 
+
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden; /* prevent sideways scroll only */
+  overflow-y: auto;   /* allow vertical scroll */
+  background-color: var(--background);
 }
+
 
 /* === Canvas Background === */
 #canvas {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: 0;
   overflow: auto;
 }
 
 /* === Title Container === */
 .title {
+  
+  margin-top: 20vh;
+}
+
+.help{
+  margin-top: -50%;
   z-index: 1;
   position: relative;
   text-align: center;
-  margin-top: 20vh;
 }
 
 /* === Main Title === */
@@ -90,11 +97,11 @@ p {
   }
 }
 
-.filler{
-  height: 50%;
-}
+
 .main {
+  margin-top: 50%;
   z-index: 1;
   position: relative;
   text-align: center;
+  
 }
