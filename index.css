@@ -29,17 +29,25 @@ body {
   overflow: auto;
 }
 
-/* === Title Container === */
-.title {
-  
-  margin-top: 20vh;
-}
 
 .help{
-  margin-top: -50%;
+  margin-top: -100vh;
   z-index: 1;
   position: relative;
   text-align: center;
+}
+
+
+.title{
+  margin-top: 20vh
+}
+
+.main {
+  margin-top: 60vh;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  
 }
 
 /* === Main Title === */
@@ -90,7 +98,7 @@ p {
 @media (max-width: 768px) {
   .title-main {
     font-size: 64px;
-    margin-top: 40%;
+    margin-top: 40vh;
   }
   .title-sub {
     font-size: 28px;
@@ -98,10 +106,37 @@ p {
 }
 
 
-.main {
-  margin-top: 50%;
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
 }
+.col {
+  flex: 1;
+}
+
+.origins-image {
+  width: 30%;
+  height: 50vh;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+
+}
+.origins-text {
+  width: 70%;
+  height: 50vh;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
