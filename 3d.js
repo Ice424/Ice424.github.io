@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from './three/examples/jsm/loaders/GLTFLoader.js';
+const url = './model/Untitled.glb';
 
 function main() {
   const canvas = document.querySelector('#c');
@@ -18,7 +19,7 @@ function main() {
   scene.add(light);
 
   const gltfLoader = new GLTFLoader();
-  const url = 'model/Untitled.glb';
+  
 
   let mixer; // will control animations
   const clock = new THREE.Clock(); // keeps consistent animation timing

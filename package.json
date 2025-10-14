@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "three": "^0.180.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": ""
+  }
+}
