@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Proto";
+  src: url(./Proto/0xProtoNerdFontMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url(./Proto/0xProtoNerdFontMono-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Proto";
+  src: url(./Proto/0xProtoNerdFontMono-Italic.ttf);
+  font-style: italic;
+}

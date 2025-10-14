@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-const url = './model/Untitled.glb';
+
 
 function main() {
   const canvas = document.querySelector('#c');
@@ -24,7 +24,7 @@ function main() {
   let mixer; // will control animations
   const clock = new THREE.Clock(); // keeps consistent animation timing
 
-  gltfLoader.load(url, (gltf) => {
+  gltfLoader.load("/model/Origins5E.glb", (gltf) => {
     const root = gltf.scene;
     scene.add(root);
 

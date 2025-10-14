@@ -8,36 +8,36 @@
   <title>Ice424</title>
   <meta name="description" content="Ice424 Portfolio Website">
 
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <link rel="stylesheet" type="text/css" href="fonts.css">
+  <!-- ✅ Import styles from src -->
+  <link rel="stylesheet" type="text/css" href="/src/index.css">
+  <link rel="stylesheet" type="text/css" href="/src/fonts.css">
 
   <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
 </head>
 
 <body>
   <canvas id="canvas"></canvas>
-  <div>
-    <div class="help">
-      <div class="title" id="termynal">
-        <h1 data-ty="input" class="title-main">Ice424</h1>
-        <h2 data-ty="input" class="title-sub">Portfolio website</h2>
-      </div>
-      <div class="main">
-        <div class="flex-grid">
-          <div class="col origins-image">
-            <canvas id="c" class="c"></canvas>
-          </div>
-          <div class="origins-text">
-            <h1>Text</h1>
-          </div>
+
+  <div class="help">
+    <div class="title">
+      <h1 class="title-main">Ice424</h1>
+      <h2 class="title-sub">Portfolio website</h2>
+    </div>
+    <div class="main">
+      <div class="flex-grid">
+        <div class="col origins-image">
+          <canvas id="c" class="c"></canvas>
+        </div>
+        <div class="origins-text">
+          <h1>Text</h1>
         </div>
       </div>
     </div>
-
   </div>
-  <script src="./canvas.js"></script>
-  <script src="./termynal.js" data-termynal-container="#termynal"></script>
-  <script type="module" src="./3d.js"></script>
+
+  <!-- ✅ Load your modules from /src -->
+  <script type="module" src="/src/canvas.js"></script>
+  <script type="module" src="/src/3d.js"></script>
 </body>
 
 </html>
