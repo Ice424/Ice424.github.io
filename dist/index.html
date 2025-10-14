@@ -10,9 +10,10 @@
 
   <!-- ✅ Import styles from src -->
 
+  <script src="src/button.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
-  <script type="module" crossorigin src="/assets/index-C45YG_Ep.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D6sRCq3e.css">
+  <script type="module" crossorigin src="/assets/index-DcykbyoE.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DoY8yx2A.css">
 </head>
 
 <body>
@@ -25,17 +26,50 @@
     </div>
     <div class="main">
       <div class="flex-grid">
-        <div class="col origins-image">
-          <canvas id="c" class="c"></canvas>
+        <div class="col origins">
+          <canvas id="origins-scene" class="origins-scene"></canvas>
         </div>
-        <div class="origins-text">
-          <h1>Text</h1>
+        <div class="col origins-text">
+          <h2>Origins 5E</h2>
+          <h3>Origins 5E is a project involving Minecraft's resource and datapack features along with the features intrude in the <a href="https://modrinth.com/mod/origins" target="_blank">origins</a> mod. It uses python to take powers defined in the origins format & automatically add them to a custom GUI system built on <a href="https://github.com/CloudWolfYT/MC-GUIFramework" target="_blank">this project</a> which allows players to buy and equip powers with a new currency found across the world. </h3>
+
+          <h3>This project contains over 100 powers and over 130 pixel art assets for GUI screens, power icons, etc. Due to this this has lead me to teach others on how to use git & github and the python libraries that I have created to be able to aid me with this project </h3>
+          <div class="GH-button-grid">
+            <a href="https://github.com/Ice424/Origins-5E-Data" target="_blank" class="github-button">
+              <img src="assets/github-mark-white.svg" alt="GitHub" class="gh-icon" />
+              <span class="label">Origins 5E Data</span>
+            </a>
+            <a href="https://github.com/Ice424/Origins-5E-Resources" target="_blank" class="github-button">
+              <img src="assets/github-mark-white.svg" alt="GitHub" class="gh-icon" />
+              <span class="label">Origins 5E Resources</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-grid">
+        <div class="col origins-scene-container">
+          <canvas id="origins-scene" class="origins-scene"></canvas>
+        </div>
+        <div class="col origins-text">
+          <h2>Origins 5E</h2>
+          <h3>Origins 5E is a project involving Minecraft's resource and datapack features along with the features intrude in the <a href="https://modrinth.com/mod/origins" target="_blank">origins</a> mod. It uses python to take powers defined in the origins format & automatically add them to a custom GUI system built on <a href="https://github.com/CloudWolfYT/MC-GUIFramework" target="_blank">this project</a> which allows players to buy and equip powers with a new currency found across the world. </h3>
+
+          <h3>This project contains over 100 powers and over 130 pixel art assets for GUI screens, power icons, etc. Due to this this has lead me to teach others on how to use git & github and the python libraries that I have created to be able to aid me with this project </h3>
+          <div class="GH-button-grid">
+            <a href="https://github.com/Ice424/Origins-5E-Data" target="_blank" class="github-button">
+              <img src="assets/github-mark-white.svg" alt="GitHub" class="gh-icon" />
+              <span class="label">Origins 5E Data</span>
+            </a>
+            <a href="https://github.com/Ice424/Origins-5E-Resources" target="_blank" class="github-button">
+              <img src="assets/github-mark-white.svg" alt="GitHub" class="gh-icon" />
+              <span class="label">Origins 5E Resources</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ✅ Load your modules from /src -->
 </body>
 
 </html>

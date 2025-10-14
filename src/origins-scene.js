@@ -3,14 +3,24 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 
 function main() {
-  const canvas = document.querySelector('#c');
+  const canvas = document.querySelector('#origins-scene');
   const renderer = new THREE.WebGLRenderer({ antialias: true, canvas, alpha: true });
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
 
   const camera = new THREE.PerspectiveCamera(90, canvas.clientWidth / canvas.clientHeight, 0.1, 100);
-  camera.position.set(-5, 6, -5);
-  camera.lookAt(0, 3, 0);
+  camera.position.set(-4, 6, -4);
+  camera.lookAt(0, 4, 0);
+
+  function resize_render() {
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+    camera.aspect = (canvas.clientWidth / canvas.clientHeight)
+    camera.updateProjectionMatrix()
+  }
+
+  resize_render();
+  window.addEventListener("resize", resize_render);
+
+  
 
   const base_rotation = camera.rotation.clone();
   const scene = new THREE.Scene();
@@ -19,7 +29,7 @@ function main() {
   scene.add(light);
 
   const gltfLoader = new GLTFLoader();
-  
+
 
   let mixer; // will control animations
   const clock = new THREE.Clock(); // keeps consistent animation timing
