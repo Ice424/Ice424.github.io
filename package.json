@@ -1,11 +1,30 @@
 {
+  "name": "ice424.github.io",
+  "version": "1.0.0",
+  "description": "Three.js project hosted on GitHub Pages",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "three": "^0.180.0"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": ""
-  }
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^5.4.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ice424/Ice424.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ice424/Ice424.github.io/issues"
+  },
+  "homepage": "https://Ice424.github.io/",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
