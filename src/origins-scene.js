@@ -63,7 +63,7 @@ function main() {
     const normY = ((relY / rect.height) - 0.5) * 2;
 
     panx = normX * 0.01;
-    pany = normY * 0.02;
+    pany = normY * 0.03;
   }
 
   function render() {

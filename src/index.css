@@ -128,6 +128,13 @@ p {
   text-align: left;
 } 
 
+.werewolf-text {
+  margin-top: 10vh;
+  width: 70%;
+  height: 50vh;
+  text-align: right;
+} 
+
 .origins-scene-container  {
   margin-top: 10vh;
   width: 30%;
@@ -198,4 +205,29 @@ p {
   flex: 1;
   display: block ruby;
   text-align: center;
+}
+
+
+.link:link {
+  color: var(--primary);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: var(--primary);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--secondary);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.link:active {
+  color: var(--secondary);
+  background-color: transparent;
+  text-decoration: none;
 }
