@@ -102,7 +102,7 @@ p {
 }
 
 /* === Responsive Scaling for Mobile === */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .title-main {
     font-size: 64px;
     margin-top: 40vh;
@@ -110,15 +110,17 @@ p {
   .title-sub {
     font-size: 28px;
   }
+  .flex-grid {
+    margin-bottom: -10vh;
+    display: inline-block;
+  }
 }
 
 
 .flex-grid {
   display: flex;
   justify-content: space-between;
-  height: 60vh;
-  
-
+  height: 60%;
 }
 
 .origins-text {
@@ -132,7 +134,7 @@ p {
   margin-top: 10vh;
   width: 70%;
   height: 50vh;
-  text-align: right;
+  text-align: left;
 } 
 
 .origins-scene-container  {
@@ -166,6 +168,10 @@ p {
   height: 100%;
 }
 
+.werewolf-scene {
+  width: 100%;
+  height: 100%;
+}
 
 .github-button {
   display: inline-flex;

@@ -8,12 +8,11 @@
   <title>Ice424</title>
   <meta name="description" content="Ice424 Portfolio Website">
 
-  <!-- ✅ Import styles from src -->
+  <!-- ✅ Import styles from src -->
 
-  <script src="src/button.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-delaunay@6"></script>
-  <script type="module" crossorigin src="/assets/index-BB-o2FxS.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-3U6XEzR7.css">
+  <script type="module" crossorigin src="/assets/index-DV7JHykS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BkxXFHCe.css">
 </head>
 
 <body>
@@ -47,11 +46,14 @@
         </div>
       </div>
       <div class="flex-grid">
+        <div class="col origins-scene-container">
+          <canvas id="werewolf-scene" class="werewolf-scene"></canvas>
+        </div>
         <div class="col werewolf-text">
           <h2>Werewolf Bot</h2>
-          <h3>Origins 5E is a project involving Minecraft's resource and datapack features along with the features intrude in the <a href="https://modrinth.com/mod/origins" target="_blank">origins</a> mod. It uses python to take powers defined in the origins format & automatically add them to a custom GUI system built on <a href="https://github.com/CloudWolfYT/MC-GUIFramework" target="_blank">this project</a> which allows players to buy and equip powers with a new currency found across the world. </h3>
+          <h3>Werewolf bot is a python project aiming to make the game <a href="https://en.wikipedia.org/wiki/Mafia_(party_game)">maifa/werewolf</a> to be playable through discord without a game master/GM</h3>
 
-          <h3>This project contains over 100 powers and over 130 pixel art assets for GUI screens, power icons, etc. Due to this this has lead me to teach others on how to use git & github and the python libraries that I have created to be able to aid me with this project </h3>
+          <h3>When looking at the mechanics of werewolf you realise that all the GM needs to do is to collect information and come to a conclusion based on it, its basic input, process, output. However this project runs games, input processing and sending messages entirely asynchronously allowing for fast responses and less downtime. this project was also a test of recently learnt OOP theories that i expanded on throughout making this bot</h3>
           <div class="GH-button-grid">
             <a href="https://github.com/Ice424/WerewolfBot" target="_blank" class="github-button">
               <img src="assets/github-mark-white.svg" alt="GitHub" class="gh-icon" />
@@ -59,13 +61,11 @@
             </a>
           </div>
         </div>
-        <div class="col origins-scene-container">
-          <canvas id="werewolf-scene" class="werewolf-scene"></canvas>
-        </div>
+        
       </div>
     </div>
   </div>
-
+
 </body>
 
 </html>
